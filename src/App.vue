@@ -1,23 +1,10 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import { ref } from 'vue'
-
-const count = ref(0)
-console.log(count) // { value: 0 }
-console.log(count.value) // 0
-
-count.value++
-console.log(count.value) // 1
-
-const increment = () => {
-  count.value++
-}
+import Counter from './examples/Counter.vue'
+import Button from './examples/Button.vue'
+import ExampleChange from './examples/ExampleChange.vue'
 </script>
 
 <template>
-  <button @click="increment">
-    {{ count }}
-  </button>
+  <ExampleChange><Button /></ExampleChange>
 </template>
 <style></style>
